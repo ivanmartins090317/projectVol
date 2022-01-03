@@ -1,0 +1,109 @@
+body {
+  background: rgb(165, 163, 163);
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0.25rem;
+  left: 0.25rem;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  background: linear-gradient(270deg, gray 0%, rgb(43, 246, 229) 100%);
+  color: gray;
+}
+/* volume */
+span {
+  color: rgb(22, 11, 18);
+}
+
+/****** BASE*****/
+main {
+  font-size: small;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  margin-top: 6rem;
+  color: rgb(5, 12, 11);
+}
+
+/* Input */
+.container input {
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  padding: 5px;
+  margin-bottom: 2rem;
+  position: relative;
+  outline: none;
+  border: 1px solid rgb(102, 228, 201);
+  text-align: center;
+}
+.container {
+  display: grid;
+  text-align: center;
+}
+
+.button {
+  width: 10rem;
+  background-color: rgb(102, 228, 201);
+  border-radius: 10px;
+  border: none;
+  margin-top: 0.1rem;
+  color: black;
+  display: inline-flex;
+  text-align: center;
+  position: relative;
+  transition: background 3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(24, 139, 130, 0.486);
+}
+/* resultado apos calcular */
+#resul {
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  /* padding: 0.7rem; */
+  background: rgba(39, 170, 142, 0.294);
+  border-radius: 0.25rem;
+  color: aliceblue;
+  font-size: 0.6rem small;
+}
+
+p {
+  margin-top: 2.5rem;
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  color: rgb(82, 80, 80);
+  text-align: center;
+}
+/* conteudo externo dos botoes */
+.container::before {
+  content: "";
+  width: 18.7rem;
+  height: 18.7rem;
+  border: 2px solid rgb(102, 228, 201);
+  margin-left: -4rem;
+  margin-top: -3rem;
+
+  position: absolute;
+  z-index: 0;
+  border-radius: 0.25rem;
+}
+/* icone e nome github */
+a {
+  font-size: 5pt;
+  text-decoration: none;
+  margin-top: 2.2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.555);
+  gap: 0.5rem;
+}
